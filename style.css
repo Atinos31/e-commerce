@@ -414,3 +414,57 @@ html{
 }
 /* end of section-2 btns */
 /* end section-2 */
+
+/* section3 */
+.section-3{
+    width: 100%;
+    height:100%;
+    background: var(--black-color);
+    flex-direction: column;
+    padding: 15rem 0;
+}
+
+/* section3 heading */
+.section-3-heading{
+    font-size: 10rem;
+    font-weight: 200;
+    color: var(--primary-color);
+    margin-bottom: 15rem;
+}
+/* end section3 heading */
+
+/* section 3 content */
+.section-3-content{
+    width: 80%;
+    flex-direction: column;
+    perspective: 1000rem;
+    position: relative;
+}
+
+
+/* end section 3 content */
+
+/* section3 images */
+.section-3-content img{
+    width:inherit;
+}
+/* end section3 images */
+
+/* section3 loading */
+.loading-wrapper{
+    position: absolute;
+    width: 60%;
+    height:85%;
+    background: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4)), url(/images/MacBook/macbook-1-desktop.png) center no-repeat;
+    z-index:-1;
+    top:6%;
+}
+/* end section3 loading */
+
+/* section-3-info */
+.macbook-info{
+    position:absolute;
+
+}
+/* end section-3-info */
+/* end section3 */
