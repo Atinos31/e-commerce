@@ -1,3 +1,11 @@
+// common js
+document.querySelectorAll('.watch-control, .controls a').forEach((control => {
+    control.addEventListener('click', e => {
+        e.preventDefault()
+    })
+}))
+
+//end common js
 // cube
 let x = 0
 let y = 20 // once page is reloaded , a slight rotate
@@ -50,6 +58,7 @@ document.querySelector('.controls').addEventListener('mouseout', () => {
     bool = true
     playPause()
 })
+
 //slideshow
 const slideshowDivs = () => {
     for(let i = 1; i <= 5; i++){
@@ -92,3 +101,29 @@ window.addEventListener('scroll', () => {
     }
 })
 // end section3
+
+// section-4
+const watchBands = document.querySelector('.watch-bands')
+const watchCases = document.querySelector('.watch-cases')
+
+const watchTopControl = document.querySelector('.watch-top-control')
+const watchRightControl = document.querySelector('.watch-right-control')
+const watchBottomControl = document.querySelector('.watch-bottom-control')
+const watchLeftControl = document.querySelector('.watch-left-control')
+
+let axisY = 0
+let axisX = 0
+
+watchTopControl.addEventListener('click', () => {
+    watchCases.style.marginTop = `${axisY -= 70}rem`
+})
+watchBottomControl.addEventListener('click', () => {
+    watchCases.style.marginTop = `${axisY += 70}rem`
+})
+watchRightControl.addEventListener('click', () => {
+    watchBands.style.marginRight = `${axisX += 70}rem`
+})
+watchLeftControl.addEventListener('click', () => {
+    watchBands.style.marginRight = `${axisX -= 70}rem`
+})
+// end section-4

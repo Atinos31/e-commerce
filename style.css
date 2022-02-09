@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Syne+Tactile&display=swap');
 /* global styles */
 
 * {
@@ -9,7 +9,7 @@
     list-style: none;
     outline: none;
     text-decoration: none;
-    font-family: "Work sans", sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 html{
@@ -63,6 +63,7 @@ html{
 
 .nav-link{
     font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
     display: inline-block;
     margin:0 3rem;
     color: var(--black-color);
@@ -178,7 +179,7 @@ html{
 /* CONTROLS */
 .controls{
     position: absolute;
-    bottom:-15rem;
+    bottom:-12.5rem;
     left:50%;
     transform: translateX(-50%);
     width:9rem;
@@ -243,23 +244,24 @@ html{
 /* banner */
 .section-1-banner{
     flex-direction: column;
+    
 }
 
 .section-1-banner h1{
-    font-size: 13rem;
-    font-weight: 300;
+    font-size: 5rem;
+    font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.01rem;
 }
 
 .section-1-banner p{
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 400;
-    letter-spacing: 0.1rem;
-    margin: 6rem 0 4rem 0;
+    letter-spacing: 0.01rem;
+    margin: 4rem 0 2rem 0;
 }
 .section-1-banner span{
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 5rem;
 }
 
@@ -332,7 +334,7 @@ html{
 .section-2-heading::before{
     content:"";
     width:130%;
-    height:30vh;
+    height:35vh;
     background: linear-gradient(var(--primary-color),var(--white-color));
     position: absolute;
     top:0;
@@ -349,7 +351,9 @@ html{
     height: 60vh;
     width: 50vw;
     background: linear-gradient(var(--primary-color), var(--white-color));
-    border-radius: 0.5rem;
+    border-radius: 1rem;
+    
+
 }
 
 .iphones img{
@@ -441,10 +445,7 @@ html{
     flex-direction: column;
     perspective: 1000rem;
     position: relative;
-
-
 }
-
 
 /* section3 images */
 .section-3-content img{
@@ -537,7 +538,7 @@ html{
 
 .macbook-info-heading{
     font-size: 6rem;
-    font-weight: 400;
+    font-weight: 500;
     color: var(--primary-color);
 }
 
@@ -565,3 +566,100 @@ html{
 
 /* end section-3-info */
 /* end section3 */
+
+/* section4 */
+.section-4{
+    height:140vh;
+    padding:20vh 0;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+/* section4 watches */
+.watches{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.watches > div{
+    position: absolute;
+}
+/* watchbands */
+.watch-bands{
+    transition: margin-right 1s;
+}
+.watch-band-img{
+    width:35rem;
+    height:35rem;
+    object-fit: contain;
+}
+/* end watchbands */
+/* watchcasess */
+.watch-cases{
+    flex-direction: column;
+    transition: margin-top 1s;
+}
+.watch-case-img{
+    width:35rem;
+    height:35rem;
+    object-fit: contain;
+}
+/* end watchcases */
+/* end section4 watches */
+/* watch controls */
+.watch-control{
+    position:absolute;
+    width: 4rem;
+    height: 4rem;
+    background-color: rgba(97, 96, 96, 0.9);
+    border-radius: 5rem;   
+}
+
+.watch-control i{
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.watch-top-control{
+    top:15vh;
+    left:50%;
+    transform: translateX(-50%);
+}
+.watch-right-control{
+    top:50%;
+    right:2rem;
+    transform: translateY(-50%);
+}
+
+.watch-bottom-control{
+    left:50%;
+     bottom:15vh;
+    transform: translateX(-50%);
+}
+
+.watch-left-control{
+    top:50%;
+    left:2rem;
+    transform: translateY(-50%);
+}
+
+/* end watch controls */
+/* watch button */
+.watch-btn{
+    position: absolute;
+    bottom:15vh;
+    right:30%;
+    width: 13rem;
+    height:5rem;
+    background-color: var(--black-color);
+    color: var(--primary-color);
+    border: 0.1rem dashed var(--white-color);
+    border-radius: 4rem;
+    font: 1.6rem;
+    font-weight: 200;
+    cursor: pointer;
+}
+/* end watch button */
+/* end section4 */
