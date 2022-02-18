@@ -570,7 +570,7 @@ html{
 /* section4 */
 .section-4{
     height:140vh;
-    padding:20vh 0;
+    padding:0vh 0;
     flex-direction: column;
     position: relative;
     
@@ -580,7 +580,7 @@ html{
 .watches{
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     overflow: hidden;
 }
 .watches > div{
@@ -617,6 +617,10 @@ html{
     border-radius: 5rem;   
 }
 
+.hideControl{
+    opacity:0;
+    visibility:hidden;
+}
 .watch-control i{
     font-size: 3rem;
     color: var(--primary-color);
