@@ -125,6 +125,16 @@ const hideControl = () => {
     }else{
         watchBottomControl.classList.remove('hideControl')
     }
+     if(axisX === 280){
+        watchRightControl.classList.add('hideControl')
+    }else{
+        watchRightControl.classList.remove('hideControl')
+    }
+     if(axisY === -280){
+        watchLeftControl.classList.add('hideControl')
+    }else{
+        watchLeftControl.classList.remove('hideControl')
+    }
 }
 
 watchTopControl.addEventListener('click', () => {
@@ -133,11 +143,14 @@ watchTopControl.addEventListener('click', () => {
 })
 watchBottomControl.addEventListener('click', () => {
     watchCases.style.marginTop = `${axisY += 70}rem`
+    hideControl()
 })
 watchRightControl.addEventListener('click', () => {
     watchBands.style.marginRight = `${axisX += 70}rem`
+    hideControl()
 })
 watchLeftControl.addEventListener('click', () => {
     watchBands.style.marginRight = `${axisX -= 70}rem`
+    hideControl()
 })
 // end section-4
