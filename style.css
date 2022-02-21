@@ -402,7 +402,7 @@ html{
 
 .iphone-btn span{
     position: absolute;
-    top:-3rem;
+    top:-2rem;
     font-size: 1.6rem;
     font-weight: 400;
     text-transform: uppercase;
@@ -573,7 +573,6 @@ html{
     padding:20vh 0;
     flex-direction: column;
     position: relative;
-    
 }
 
 /* section4 watches */
@@ -667,3 +666,70 @@ html{
 }
 /* end watch button */
 /* end section4 */
+
+/* section5 */
+.section-5{
+    width:100%;
+    height:100vh;
+}
+
+/* section 5 content */
+.airpods{
+    width:90%;
+    height:80%;
+    display: flex;
+    position: relative;
+}
+
+/* section5 heading */
+.section-5-heading{
+    position: absolute;
+    font-size: 15rem;
+    font-weight: 300;
+    color: var(--white-color);
+    text-shadow: 0.1rem 0.1rem 0 #999;
+    top:0;
+    left:50%;
+    transform: translateX(-50%);
+}
+/*  end section5 heading */
+
+/* section5 images */
+.airpods img{
+    width:50%;
+    height:100%;
+    object-fit: contain;
+}
+
+.airpods-img-2{
+    background-color: var(--primary-color);
+}
+/* end section5 images */
+/* section5 buttons */
+.airpods-buttons{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    margin-top: 5rem;
+}
+
+.airpods-btn{
+    width:15rem;
+    height:4rem;
+    background-color: var(--primary-color);
+    margin: 0 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--white-color);
+    cursor: pointer;
+}
+.airpods-btn:last-child{
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+
+/* end section5 buttons */
+/* end section 5 content */
+
+/* end section5 */
