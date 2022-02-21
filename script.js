@@ -1,5 +1,6 @@
 // common js
-document.querySelectorAll('.watch-control, .controls a').forEach((control => {
+// prevent default submission
+document.querySelectorAll('.watch-control, .controls a, .iphone-btn').forEach((control => {
     control.addEventListener('click', e => {
         e.preventDefault()
     })
